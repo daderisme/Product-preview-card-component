@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    padding: 30px 20px;
+}
+
+.product-preview-card {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8rem auto;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.image-card {
+    margin-bottom: -5px;
+}
+
+.image-product-desktop {
+    display: none;
+}
+
+.info-card {
+    padding: 20px;
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 375px;
+    border-radius: 0 0 10px 10px;
+}
+
+.perfume-info h1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: gray
+}
+
+.perfume-info h2 {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.perfume-info p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: gray;
+    padding: 0 0 10px 0;
+    line-height: 24px;
+}
+
+.item-prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0
+}
+
+.discounted-price {
+    color: #0e7b4f;
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    margin: 0 1rem 0 0;
+
+} 
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    background:  #0e7b4f;
+    border: none;
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+svg {
+    margin: 0 10px 0 0 ;
+}
+
+button:active {
+    background: #119a63;
+}
+
+@media (min-width: 768px) {
+    .product-preview-card {
+        display: flex;
+        flex-direction: row;
+        width: 3750px;
+    }
+
+    .info-card {
+        padding: 20px 70px 0 20px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .perfume-info p {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        color: gray;
+        padding: 0 0 10px 0;
+        line-height: 24px;
+        width: 120%;
+    }
+
+    img {
+        border-radius: 10px 0 0 10px;
+        width: 300px;
+    }
+
+    .image-product-desktop {
+        display: block;
+    }
+
+    .image-product-mobile {
+        display: none;
+    }
+}
